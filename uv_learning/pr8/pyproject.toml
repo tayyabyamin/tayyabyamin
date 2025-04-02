@@ -1,0 +1,21 @@
+[project]
+name = "pr8"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "tayyabyamin", email = "tayyabyamin@gmail.com" }
+]
+requires-python = ">=3.11.11"
+dependencies = [
+    "crewai>=0.105.0",
+    "onnxruntime>=1.21.0",
+]
+
+[project.scripts]
+pr8 = "pr8:main"
+simpleflow = "pr8.main:kickoff"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
